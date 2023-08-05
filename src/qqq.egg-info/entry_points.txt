@@ -1,0 +1,3 @@
+[console_scripts]
+hmean = imppkg.hmean:read_cl_arguments
+vmean = imppkg.harmony:main

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: qqq
+Version: 0.0.1
+Summary: This package does good things
+Home-page: https://github.com/JoeRodrigue/qqq
+Author: Joe Rodrigue
+Author-email: "Joe Rodrigue" <joe.rodrigue@gmail.com>
+License: Apache-2.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# qqq
+
+This package does amazing things.
+
+## Installation
+
+```shell
+$ python -m pip install qqq
+```
