@@ -1,0 +1,19 @@
+name: Packaging Harmonic Mean
+run-name: ${{ github.actor }} is learning GitHub Actions
+on:
+  - push
+jobs:
+  # format:
+  #   name: Format
+  #   runs-on: macos-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - name: format
+      
+  say-hello:
+    name: Say Hello
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Say Hello step
+        run: echo "Hello!!!"
