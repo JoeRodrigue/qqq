@@ -11,9 +11,9 @@ jobs:
   #     - name: format
       
   say-hello:
-    name: Say Hello
+    name: Say Hello the job
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Say Hello step
+      - name: Say Hello the step
         run: echo "Hello!!!"
