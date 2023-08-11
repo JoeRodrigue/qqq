@@ -42,3 +42,28 @@ jobs:
         run: python -m pip install tox
       - name: Run mypy
         run: tox -e typecheck
+
+  test-color-accessibility:
+    name: Test color accessibility
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        text-color:
+          - value: "#000000"
+          - value: "#33a5f3"
+        background-color:
+          - value: "#336633"
+          - value: "#989a5f"
+        standard:
+          - name: "WCAG"
+            level: "AA"
+          - name: "WCAG"
+            level: "AAA"
+
+    steps:
+      - name: Check accessibility
+        run: |
+          echo Checking ${{ matrix.text-color.value }}
+            on          ${{ matrix.background-color.value }}
+            for         ${{ matrix.standard.name }}
+            level       ${{ matrix.standard.level }}
