@@ -61,7 +61,4 @@ jobs:
     steps:
       - name: Check accessibility!
         run: |
-          echo Checking ${{ matrix.text-color.value }} \
-            ${{ matrix.background-color.value }} \
-            ${{ matrix.standard.name }} \
-            ${{ matrix.standard.level }}
+          echo Checking ${{ matrix.text-color.value }} ${{ matrix.background-color.value }} ${{ matrix.standard.name }} ${{ matrix.standard.level }}
