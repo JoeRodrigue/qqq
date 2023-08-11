@@ -54,7 +54,7 @@ jobs:
             toxenv: "py311"
     steps:
       - name: Check out the code to be tested
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
       - name: Check out Python ${{ matrix.python.version }}
         uses: actions/setup-python@4.0.0
         with:
