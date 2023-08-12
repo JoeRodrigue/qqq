@@ -30,4 +30,4 @@ def test_harmony_happy_path(inputs: list[tuple], expected_value: float, monkeypa
     main()
 
     # expected_value = 2.0
-    assert capsys.readouterr().out.strip() == colored(str(expected_value), "red", "on_cyan", attrs=["bold"])
+    assert capsys.readouterr().out.strip() == colored(str(expected_value), "red", "on_white", attrs=["bold"])

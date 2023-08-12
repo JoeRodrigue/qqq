@@ -8,7 +8,6 @@ src/imppkg/data.json
 src/imppkg/harmonic_mean.c
 src/imppkg/harmonic_mean.pyx
 src/imppkg/harmony.py
-src/imppkg/hello.py
 src/imppkg/hmean.py
 src/imppkg/py.typed
 src/qqq.egg-info/PKG-INFO
