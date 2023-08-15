@@ -71,7 +71,7 @@ jobs:
         os:
           - version: ubuntu-20.04
           - version: windows-2019
-          - version: macOS-12.6
+          - version: macOS-12.06
         python:
           - version: "3.10"
           - version: "3.11"
