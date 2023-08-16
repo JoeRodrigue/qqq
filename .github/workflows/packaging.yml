@@ -63,30 +63,6 @@ jobs:
         run:  python -m pip install tox
       - name: Run pytest
         run:  tox -e ${{ matrix.python.toxenv }}
-				build_wheels:
-					name: Build wheels on ${{ matrix.os }}
-					runs-on: ${{ matrix.os }}
-					strategy:
-						matrix:
-							os: [ubuntu-20.04, windows-2019, macOS-12]
-							python:
-								- version: "3.10"
-								- version: "3.11"
-					steps:
-						- name: Check out the source code
-							uses: actions/checkout@v3
-						- name: Check out Python ${{ matrix.python.version }}
-							uses: actions/setup-python@v4.0.0
-							with:
-								python-version: ${{ matrix.python.version }}
-						- name: Install cibuildwheel
-							run: python -m pip install cibuildwheel
-						- name: Build the wheels and store them in wheels/
-							run: python -m cibuildwheel --output-dir wheels
-						- name: Upload the wheels
-							uses: actions/upload-artifact@v3
-							with:
-								path: ./wheels/*.whl
   build_wheels:
     name: Build wheels on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
