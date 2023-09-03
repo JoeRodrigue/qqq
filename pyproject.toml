@@ -19,7 +19,7 @@ commit          = true
   'Version {version}',
 ]
 "setup.cfg" = [
-  'version = "v2023.09.03-2"',
+  'version = "{version}"',
 ]
 "src/imppkg/_version.py" = [
   '__version__ = "{version}"',
