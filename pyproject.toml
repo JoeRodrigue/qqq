@@ -18,6 +18,9 @@ commit          = true
 "README.md" = [
   'Version {version}',
 ]
+"setup.cfg" = [
+  'version = "v2023.04.26-2"',
+]
 "src/imppkg/_version.py" = [
   '__version__ = "{version}"',
 ]
