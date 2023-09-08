@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: qqq
-Version: 0.0.1
+Version: 2023.9.5
 Summary: This package does good things
 Home-page: https://github.com/JoeRodrigue/qqq
 Author: Joe Rodrigue
@@ -13,8 +13,11 @@ Classifier: Programming Language :: Python :: 3.11
 Classifier: Programming Language :: Python :: 3.12
 Requires-Python: >=3.10
 Description-Content-Type: text/markdown
+Requires-Dist: termcolor<2.0,>=1.1.0
+Requires-Dist: click>=8.0.0
 
 # qqq
+# Version 2023.9.5
 
 This package does amazing things.
 
