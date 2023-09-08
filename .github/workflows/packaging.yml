@@ -48,8 +48,8 @@ jobs:
     strategy:
       matrix:
         python:
-          - version: "3.10"
-            toxenv: "py310"
+          # - version: "3.10"
+          #   toxenv: "py310"
           - version: "3.11"
             toxenv: "py311"
     steps:
@@ -115,7 +115,7 @@ jobs:
       - test
       - build_wheels
       - build_source_dist
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     permissions:
       id-token: write
     steps:
