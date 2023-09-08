@@ -1,4 +1,4 @@
 #! /usr/bin/python3.11
 # -*- coding: utf-8 -*-
 
-__version__ = "2023.9.5"
+__version__ = "2023.9.6"
